@@ -37,9 +37,11 @@
     </div>
     
     <div id="main-content">
+
+        <div class="button" style="text-align: center; padding: 10px; background: orange;">Unwrap</div>
     
         <div class="wrapper">
-            <section id="points-of-sale">
+            <section id="points-of-sale" style="height: 0; overflow: hidden;">
                 <h2>Points of Sale</h2>
                 <ul>
                     <li>
@@ -151,7 +153,81 @@
         $('#tweets div p').text(tweety);
         */
 
-        
+        /*Chapt 10 Unwrap */
+        /*
+        $('section').wrap('<div>');
+        $('section').unwrap('<div>');
+        $('section').wrapAll('<div>');
+
+    */ 
+
+    /*
+    var wrapper = "<div class='wrapper'>";
+    var button = $('.button');
+    var wrapped = true;
+
+    button[0].onclick = function(){
+        if(wrapped){
+            $('section').unwrap();
+            wrapped = false;
+            button.text('Wrap')
+        }else{
+            $('section').wrapAll(wrapper);
+            wrapped = true;
+            button.text('Unwrap')
+        }
+    };
+*/
+
+/*
+/*chapter 11  remove, empty*/
+/*
+$('.button').remove();
+$('#points-of-sale').empty();
+$('#contact img').remove();
+
+*/ 
+
+/*chapter 12* Changing attributes*/
+
+
+/*
+$('#contact img').attr('alt', 'location');
+
+$('#clients').attr('alt', 'new stuff')
+*/
+
+/*Chapt 13 Controlling CSS */
+
+/*
+console.log($('#social-nav').css("position"));
+$('#social-nav').css("top", "200px");
+$('#social-nav').css({
+    "top": "40000px",
+    "left": "1500px",
+    'opacity': "1",
+});
+*/
+
+/*Chapter 14 classes*/ 
+
+
+
+var button = $('h2 a');
+
+button[0].onclick=function(){
+    $('#points-of-sale').toggleClass('open')
+    return false;
+}
+
+
+
+
+
+
+
+
+
 
     
 
