@@ -3,6 +3,8 @@
 <head>
     <title>Green Design</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scipy.js"></script>
 </head>
     
 <body>
@@ -81,11 +83,87 @@
                     <li class="linked-in"><a href="">Linked In</a></li>
                 </ul>
             </section>
+
+            <section id="tweets">
+                <h2>Latest Tweets</h2>
+                <div>
+                    <p>For all tweets, check out our Twitter account.</p>
+                </div>
+            </section>
         </div>
         
     </div>
+
+    <script>
+        /*
+        $('h3').css({border: '3px solid blue'});
+
+        $("#clients").css({border: '3px solid green'});
+
+        $('#contact ul:first-child').css({border: '2px solid orange'})
+        
+        $('header nav li:odd').css({border: '4px solid blue'});
+        $('header nav li:even').css({border: '4px solid indigo'});
+
+        $("section:not('#contact')").css({border: '4px dotted red'});
+
+        $('#social-nav li').css({border: '2px solid purple'});
+
+        /*$('img[alt]').css({border: '10px solid pink'});*/
+
+        /*$("img[alt=quote]").css({border: '4px solid purple'})
+
+        /*Jquery selectors and filters  api Jquery.com*/ 
+
+
+        /* ---------------------------------------- */
+        /* chapt 7
+
+        $('#contact-methods').next().css({border: '3px solid red'}); 
+
+        $('#social-nav').children().css({border: '3px solid green'});
+
+        $('.banner-title').parents().css({border: '3px solid pink'});
+
+        $('#social-nav').children().css({border: '5px dotted green'});
+
+        $('#contact').find('.facebook').css({border: '6px solid brown'}); 
+
+        $('#social-nav').closest('.wrapper').css({border: '5px solid grey'});
+        */
+
+        /*Chapt 8 chaining*/
+
+        /*
+        $('#contact-methods').css({border: '5px solid red'})
+        .next().css({border:"2px solid green"})
+        .closest('section').css({border: '2px solid blue'})
+        */ 
+
+        /*Chapt 9 Adding content */
+
+        
+        /*var tweet = "<div style='margin: 20px 0; padding: 10px; background: pink'>The big fight live: ham vs cheese:</div>";
+        /*$('#tweets div').append(tweet)*/
+
+        /*var tweety = "The big fight live: ham vs cheese:";
+
+        $('#tweets div p').text(tweety);
+        */
+
+        
+
     
+
+
+
+
+
+    </script>
 </body>
+
+
+
 
 </html>
 
